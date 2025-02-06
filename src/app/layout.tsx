@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className="antialiased w-screen h-screen">
         <NextThemesProvider>{children}</NextThemesProvider>
       </body>
