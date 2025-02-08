@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import NextThemesProvider from "@/libs/next-themes/next-themes-provider";
 import "@/styles/globals.css";
-import NextThemesProvider from "@/libs/next-themes-provider";
+
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: ""
@@ -13,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="antialiased w-screen h-screen">
+      <body className="h-screen w-screen antialiased">
         <NextThemesProvider>{children}</NextThemesProvider>
       </body>
     </html>
